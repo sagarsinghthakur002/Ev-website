@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Background from "./components/Background/Background"; // Ensure correct case
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";  // Fixed import
@@ -13,13 +13,17 @@ export default function App() {
   const [heroCount, setHeroCount] = useState(2);
   const [playStatus, setPlayStatus] = useState(false);
 
+  useEffect(()=> {
+    setInterval(()=>{})
+
+  })
   return (
     <div>
       <Background playStatus={playStatus} heroCount={heroCount} />
       <Navbar />
       <Hero
       setPlayStatus={setPlayStatus}
-      heroData={heroData}
+      heroData={heroData[heroCount]}
       heroCount={heroCount}
       setHeroCount={setHeroCount}
       playStatus={playStatus}

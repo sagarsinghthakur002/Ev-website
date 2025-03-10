@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 120px;
+    margin: 20px 120px;
     color: white;
+
+   
 
 }
 
@@ -11,18 +13,29 @@
     font-family:;
     font-size: 42px;
     font-size:500;
+    color: rgb(38, 137, 25);
+    
 }
-
+.nav-logo img {
+    width:4em;
+    padding-top:8px;
+}
 .nav-menu {
     display: flex;
     align-items:center;
     list-style: none;
     font-size: 18px;
     gap:90px;
+  
 }
 .nav-contact {
     border-radius:50px ;
     padding: 10px 38px;
     background-color: #fff;
     color: #262626;
+   
+}
+.all {
+    background: #000000;
+    margin-top: -20px;
 }
